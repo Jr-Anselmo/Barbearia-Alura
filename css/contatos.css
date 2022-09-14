@@ -1,0 +1,140 @@
+body {
+    font-family: var(--fonte-principal);
+
+}
+
+/* css do formulario | contatos */ 
+
+.formulario {
+    width: 80%;
+    padding: 2em 0 0 0.5em;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formulario__item,
+.radio {
+    display: block;
+    margin: 0.5em 0;
+
+}
+
+.formulario__input {
+    width: 80%;
+    padding: 0.5em 0 0.5em 1em;
+    border-radius: 10px;
+
+}
+
+.formulario__input::placeholder {
+    text-align: center;
+}
+
+.radio-titulo {
+    margin: 1em 0;
+    font-weight: 700;
+}
+
+textarea {
+    width: 80%;
+    padding-left: 1em;
+    margin-bottom: 1em;
+}
+
+.radio-titulo {
+    margin: 1em 0;
+}
+
+.checkbox {
+    font-weight: 700;
+}
+
+.checkbox-input {
+    margin: 2em 0;
+}
+
+.opcoes__titulo {
+    font-weight: 700;
+    margin: 1em 0;
+}
+
+.opcoes__item {
+    font-size: 1em;
+}
+
+.enviar {
+    display: block;
+    margin: 1em 0;
+    padding: 1em 5em;
+    background: var(--laranja);
+    color: var(--branco);
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: green;
+    transition: 2s;
+}
+/* css da tabela */
+
+.tabela,
+tr,
+td,
+th {
+    border: 2px solid var(--preto);
+    padding: 1em;
+}
+
+.tabela {
+    margin: 2.5em;
+}
+
+.cabecalho__tabela {
+    background: var(--laranja);
+    color: var(--branco);
+    font-weight: 700;
+}
+
+/* css do media responsivo 1024px */
+
+@media screen and (min-width: 1024px) {
+    .formulario {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .formulario__input {
+        width: 40%;
+    }
+
+    textarea {
+        width: 40%;
+    }
+
+    .enviar {
+        width: 40%;
+    }
+
+}
+
+/* css media responsivo 1728px */
+
+@media screen and (min-width: 1728px) {
+
+    .formulario {
+        width: 1728px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario__input {
+        width: 40%;
+    }
+
+}
